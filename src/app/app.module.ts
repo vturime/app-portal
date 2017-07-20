@@ -13,10 +13,12 @@ import {InMemoryTodoService} from './service/in-memory-todo.service';
 import {LocalStorageTodoService} from './service/local-storage-todo.service';
 import {DndModule} from 'ng2-dnd';
 import {TodoRestService} from './service/todo-rest.service';
+import { UpdatesComponent } from './updates/updates.component';
 
 const routes = [
   {path: '', component: TodoComponent},
-  {path: 'search', component: SearchComponent}
+  {path: 'search', component: SearchComponent},
+  {path: 'updates', component: UpdatesComponent}
 ];
 
 @NgModule({
@@ -25,7 +27,8 @@ const routes = [
     TodoComponent,
     TaskComponent,
     FocusDirective,
-    SearchComponent
+    SearchComponent,
+    UpdatesComponent
   ],
   imports: [
     BrowserModule,

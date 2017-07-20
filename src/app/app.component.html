@@ -17,27 +17,48 @@
           </div>
       </div> -->
 
+<div id="page" class="site">
+	<header class="ct-site-header active">
+		<div class="ct-wrap ct-site-header-container">
+			<div class="ct-brand">
+				<a>
+					<img src="../../assets/customer-timeline-logo.svg" alt="Customer Timeline" class="ct-image ct-image--logo">
+				</a>
+			</div>
+			<nav class="ct-site-nav">
+				<ul>
+									<li>
+						<a id="nav_about" routerLink="/">About</a>
+					</li>
+					<li class="dropdown">
+						<a id="nav_products" routerLink="/">Products</a>
+						<div class="dropdown-content">
+	<a routerLink="/">Timeline</a>
+	<a routerLink="/">Elements</a>
+	<a routerLink="/">Connect</a>
 
-      <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" routerLink="/">{{title}}</a>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="search">Search</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="main" style="padding-top:90px;">
+</div>
+					</li>
+			
+									<li>
+						<a id="nav_updates" routerLink="updates" class="active">Release Info</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+  </header>
+  
+   <div class="main" style="padding-top:90px;">
       <div class="container content">
         <router-outlet></router-outlet>
       </div>
     </div>
+
+        <footer class="ct-site-footer">
+            <div class="ct-wrap ct-site-footer-container">
+		        <a>
+                        <img src="../../assets/cx-personalization-logo@2x.png" alt="CX Personalization" class="ct-image ct-image--logo">
+                </a>
+            </div>
+        </footer>
+    </div><!-- #page -->

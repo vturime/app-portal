@@ -1,5 +1,397 @@
-/* You can add global styles to this file, and also import other style files*/
+/*------------------------------------*    #LAYOUT
+\*------------------------------------*/
+.ct-section {
+  min-height: 500px;
+  padding: 2em 0;
+  background: #fff; }
 
-body{
-  background-color: rgb(236,240,245);
-}
+.ct-section--padding-top {
+  padding: 2em 0 0 0; }
+
+.ct-section--padding-top-lg {
+  padding: 3em 0 0 0; }
+
+.ct-wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px; }
+
+.ct-container {
+  padding: 0 15px; }
+
+.ct-container:before, .ct-container:after,
+.ct-row:before, .ct-row:after {
+  content: '';
+  display: table; }
+
+.ct-row {
+  margin: 0 -15px; }
+
+.ct-container:after, .ct-row:after {
+  clear: both; }
+
+.ct-content-item--right {
+  text-align: right; }
+
+.ct-content-item--padding-top-right {
+  padding-top: 5em;
+  padding-right: 3em; }
+
+.ct-col-12 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 100%; }
+
+.ct-col-70 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 30px;
+  margin-left: -30px;
+  float: left;
+  width: 70%; }
+
+.ct-col-8 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 66.6667%; }
+
+.ct-col-3 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 25%; }
+
+.ct-col-6 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 50%; }
+
+.ct-col-7 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 58.3333%; }
+
+.ct-col-4 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 33.3333%; }
+
+.ct-col-10 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 83.3333%; }
+
+.ct-col-12 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 100%; }
+
+.ct-col-5 {
+  padding-right: 40px;
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 41.6667%; }
+
+.ct-col-offset-1 {
+  margin-left: 8.3333%; }
+
+.ct-col-pull {
+  left: -80px; }
+
+.ct-flex-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  -ms-flex-align: center; }
+
+.ct-flex-container.flex-end {
+  align-items: flex-end;
+  -ms-flex-align: end; }
+
+.ct-section--padding-top.flex-end {
+  min-height: 400px; }
+
+.ct-section--padding-top.flex-end .content--padding-top {
+  padding-top: 0;
+  padding-bottom: 100px; }
+
+.ct-flex-container.ct-content-item {
+  flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: row;
+  align-items: flex-start;
+  -ms-flex-align: start; }
+
+.ct-flex-container.ct-content-item h2 {
+  width: 100%; }
+
+.ct-flex-text {
+  width: 50%;
+  padding: 0 15px; }
+
+.ct-flex-data {
+  text-align: center;
+  max-width: 341px; }
+
+.data-value {
+  display: block;
+  font-size: 48px;
+  font-weight: 300; }
+
+.data-label {
+  font-size: 18px;
+  line-height: 0.9;
+  font-weight: 300; }
+
+
+/*------------------------------------*    #HEADER
+\*------------------------------------*/
+.ct-site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  background-color: rgba(16, 26, 54, 0.8); }
+
+.ct-site-header-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 95px; }
+
+.ct-brand {
+  display: inline-block; }
+
+.ct-site-nav li {
+  float: left;
+  padding: 0 0 0 10px;
+  list-style: none;
+  display: inline-block; }
+
+.ct-site-nav a.active, .ct-site-nav a:hover {
+  border-color: #fff; }
+
+.ct-site-nav a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px; }
+
+
+  .dropdown:hover > .dropdown-content {
+  display: block; }
+
+.dropdown-content {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  z-index: 9;
+  position: absolute;
+  background-color: rgba(16, 26, 54, 0.8); }
+  .dropdown-content a:link, .dropdown-content a:visited, .dropdown-content a:hover {
+    display: block;
+    text-decoration: none;
+    color: #fff; }
+
+
+
+/*------------------------------------*    #UPDATES
+\*------------------------------------*/
+#updates {
+  cursor: pointer; }
+
+.ct-background--sep {
+  background-color: #04b6d8; }
+
+.ct-background--aug {
+  background-color: #f1ba25; }
+
+.ct-background--jul {
+  background-color: #f16868; }
+
+.ct-background--jun {
+  background-color: #52bf6c; }
+
+.ct-background--may {
+  background-color: #c9aae0; }
+
+.ct-background--apr {
+  background-color: #d23574; }
+
+.ct-background--mar {
+  background-color: #97d1a2; }
+
+.ct-background--feb {
+  background-color: #5099bb; }
+
+.ct-background--jan {
+  background-color: #00506f; }
+
+.ct-background--dec {
+  background-color: #bd0429; }
+
+.ct-background--nov {
+  background-color: #9a5577; }
+
+.ct-background--oct {
+  background-color: #e47b1a; }
+
+.ct-section--updates,
+.ct-section--added-page-content {
+  padding: 4em 8em; }
+
+.ct-section--aded-page-content h1, h2 {
+  margin-bottom: 0.25em; }
+
+.ct-section--aded-page-content .h3, h3 {
+  line-height: 1.5em;
+  font-weight: 300; }
+
+.ct-updates {
+  padding: 18px; }
+
+.ct-updates-heading {
+  margin-bottom: .25em;
+  font-size: 36px;
+  padding-left: 2px; }
+
+.ct-update {
+  border-radius: 4px;
+  border: solid 1px #e0e0e0 !important;
+  background: #fff;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.13); }
+
+.ct-update:nth-child(n+1) {
+  margin-top: -5px; }
+
+.ct-update-date {
+  font-size: 22px;
+  float: left;
+  font-weight: 300;
+  color: #fff;
+  padding: 24px 0;
+  margin-right: 5%;
+  border-radius: 2px 2px 0 0; }
+
+.ct-update-date:last-of-type {
+  border-radius: 2px; }
+
+.is-active .ct-update-date {
+  border-radius: 2px; }
+
+.ct-update-header {
+  float: left;
+  padding: 24px 0;
+  width: calc(95% - 198px); }
+
+.ct-update-date span {
+  display: block;
+  text-align: center;
+  width: 118px;
+  line-height: 22px; }
+
+.ct-update-title {
+  float: left;
+  margin-right: 14%;
+  line-height: 2em;
+  font-weight: normal;
+  font-size: 30px;
+  color: #6c7480; }
+
+.ct-update-summary {
+  float: left;
+  list-style: none;
+  color: #a9adb5; }
+
+.ct-update-summary--mobile {
+  display: none; }
+
+.ct-update-summary > li {
+  line-height: 12px;
+  padding-left: 12px;
+  border-left: 2px solid #358ccb;
+  margin: 6px 0; }
+
+.ct-update-body {
+  padding: 44px 88px;
+  display: none; }
+
+.ct-update-body-img {
+  max-width: 500px;
+  width: 50%; }
+  @media screen and (max-width: 768px) {
+    .ct-update-body-img {
+      width: 100%;
+      max-width: none;
+      float: none;
+      margin: 0 auto; } }
+
+.ct-update-body h4 {
+  margin-bottom: .1em;
+  font-size: 24px;
+  font-weight: 600;
+  color: #444; }
+
+.ct-update-body h5 {
+  margin-bottom: .1em;
+  font-size: 20px;
+  font-weight: 600;
+  color: #444; }
+
+.ct-update-body p {
+  margin-bottom: 1.5em;
+  padding-top: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #777e89; }
+
+.ct-update-body .ct-update-close {
+  clear: both;
+  background: none;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  border: none;
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #418fff; }
+
+/*------------------------------------*    #FOOTER
+\*------------------------------------*/
+.ct-site-footer {
+  padding: 2em 0;
+  background-color: #151c22;
+  color: #fff; }
+
+.ct-site-footer-container {
+  text-align: center; }
+
